@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>'Age Calculator'</title>
+</head>
+<body>
+<h2><cenrter>Age Calculator</cenrter></h2>
+Year of birth:
+<input type="text" id="myYearOfBirthBox">
+
+<button onclick="makeSomeChanges()">OK</button>
+
+<p id="myResult"></p>
+
+<script>
+function makeSomeChanges() {
+
+    let yearOfBirth = parseInt(document.getElementById('myYearOfBirthBox').value);
+
+    let currentYear = 2020;
+
+    let age = currentYear - yearOfBirth;
+    //alert(age);
+    document.getElementById('myResult').innerHTML= age;
+}
+</script>
+
+
+
+</body>
+</html>
